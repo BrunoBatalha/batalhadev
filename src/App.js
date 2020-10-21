@@ -1,14 +1,11 @@
 import React from 'react';
 import './style.css';
+import Introducao from './components/introducao';
 
 function App() {
   return (
     <>
-      <div>
-        <h1>BatalhaDev</h1>
-        <p>WebDesigner</p>
-        <p>Evoluindo sua empresa digitalmente</p>
-      </div>
+      <Introducao titulo="BatalhaDev" subtitulo1="WebDesigner" subtitulo2="Evoluindo sua empresa digitalmente" />
       <section>
         <h2>Sobre mim</h2>
         <p>
