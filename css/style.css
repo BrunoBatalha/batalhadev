@@ -99,11 +99,11 @@ ul {
     margin: 2px auto 8px auto;
 }
 
-.introducao .container p:first-of-type {
+.introducao .container-textos p:first-of-type {
     margin-top: 8px;
 }
 
-.introducao .container p {
+.introducao .container-textos p {
     font-size: 24px;
 }
 
