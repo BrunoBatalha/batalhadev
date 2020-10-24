@@ -50,6 +50,18 @@ ul {
     margin: 0
 }
 
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.secao {
+    padding: 60px 0;
+}
+
 .container {
     max-width: 940px;
     margin: 0 auto;
@@ -73,8 +85,9 @@ ul {
 
 .introducao {
     background: url('../img/bg-intro.png') no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    height: 500px;
+    height: 100vh;
 }
 
 .introducao .container-textos {
@@ -108,10 +121,6 @@ ul {
 }
 
 /* Sobre */
-
-.sobre {
-    padding: 60px 0;
-}
 
 .sobre .info-sobre {
     display: flex;
@@ -163,8 +172,8 @@ ul {
     transform: rotate(-5deg);
     width: 110%;
     margin-left: -5%;
+    margin-top: 40px;
     height: 800px;
-    padding: 60px 0;
 }
 
 .servicos .container {
@@ -198,4 +207,44 @@ ul {
 
 .servicos .lista-servicos li img {
     margin-left: 30px;
+}
+
+/* Skills */
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills .skills-slider {
+    display: flex;
+    align-items: center;
+}
+
+.skills .lista-skills {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.skills .lista-skills li {
+    width: 220px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.skills .btn-anterior, .skills .btn-proximo {
+    height: 0;
+    width: 0;
+    background: transparent;
+    border-style: solid;
+}
+
+.skills .btn-anterior {
+    border-width: 17.5px 30.3px 17.5px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.skills .btn-proximo {
+    border-width: 17.5px 0 17.5px 30.3px;
+    border-color: transparent transparent transparent #ffffff;
 }
