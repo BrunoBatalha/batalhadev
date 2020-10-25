@@ -13,9 +13,10 @@ html {
 }
 
 body {
-    /* background: url(../img/fundo-swipe.png) no-repeat;
+    background: url(../img/fundo-swipe.png) no-repeat;
     background-size: cover;
-    background-position-y: 500px; */
+    background-position-y: 700px;
+    background-position-x: -100px;
     overflow-x: hidden;
 }
 
