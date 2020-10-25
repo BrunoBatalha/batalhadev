@@ -129,7 +129,6 @@ button:focus {
 .sobre .info-sobre img {
     height: 300px;
     width: 300px;
-    background-color: red;
     margin: 0 30px;
 }
 
@@ -169,15 +168,14 @@ button:focus {
 
 .servicos {
     background: var(--color-secondary);
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
     width: 110%;
     margin-left: -5%;
     margin-top: 40px;
-    height: 800px;
 }
 
 .servicos .container {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
 }
 
 .servicos .lista-servicos {
@@ -218,6 +216,7 @@ button:focus {
 .skills .skills-slider {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .skills .lista-skills {
@@ -228,8 +227,14 @@ button:focus {
 
 .skills .lista-skills li {
     width: 220px;
-    margin: 0 20px;
+    height: 150px;
+    margin-right: 40px;
     text-align: center;
+}
+
+.skills .lista-skills li img {
+    max-width: 100%;
+    max-height: 150px;
 }
 
 .skills .btn-anterior, .skills .btn-proximo {
@@ -247,4 +252,85 @@ button:focus {
 .skills .btn-proximo {
     border-width: 17.5px 0 17.5px 30.3px;
     border-color: transparent transparent transparent #ffffff;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background: var(--color-secondary);
+    transform: rotate(-3deg);
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 40px;
+}
+
+.portfolio .container {
+    transform: rotate(3deg);
+}
+
+.portfolio .lista-portfolio {
+    list-style: none;
+    display: flex;
+}
+
+.portfolio .lista-portfolio li {
+    margin-right: 20px;
+}
+
+.portfolio .lista-portfolio li:last-of-type {
+    margin-right: 0px;
+}
+
+.portfolio .lista-portfolio li * {
+    display: block;
+}
+
+.portfolio .lista-portfolio li img {
+    width: 300px;
+    height: 200px;
+    background: red;
+}
+
+.portfolio .lista-portfolio li a {
+    border: 3px solid #fff;
+    text-decoration: none;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 20px;
+    color: var(--text);
+    margin-top: 20px;
+}
+
+/* Contato */
+
+.contato {}
+
+.contato .redes {
+    display: flex;
+    justify-content: center;
+}
+
+.contato .redes {
+    display: flex;
+    justify-content: center;
+}
+
+.contato .redes a {
+    border-bottom: 3px solid #fff;
+}
+
+.contato .redes a:first-of-type {
+    margin-right: 50px;
+}
+
+/* Rodape */
+
+.rodape {
+    background: var(--color-secondary);
+    padding: 35px 0;
+}
+
+.rodape p {
+    font-size: 20px;
+    text-align: center;
 }
